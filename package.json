@@ -5,6 +5,8 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "https-localhost": "^4.7.1",
+    "vite-plugin-pwa": "^1.0.2",
     "vitepress": "^1.6.3"
   }
 }
