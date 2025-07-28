@@ -5,6 +5,12 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   title: "My blog",
   description: "My blog",
+  head: [
+    // VitePress 页面图标
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
