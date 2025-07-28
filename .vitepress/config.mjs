@@ -9,7 +9,8 @@ export default defineConfig({
     // VitePress 页面图标
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }]
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -76,7 +77,7 @@ export default defineConfig({
         },
         workbox: {
           maximumFileSizeToCacheInBytes: 5000000, // 5MB
-          globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,ico}'],
+          globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,ico,webmanifest}'],
           runtimeCaching: [
             {
               urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
