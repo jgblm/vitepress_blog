@@ -6,20 +6,21 @@ hero:
   name: "Python"
   tagline: 🐍 调包圣手，发量守护者
   image:
-    src: assets/python.png
+    src: /python/python.png
     alt: python
   actions:
     - theme: brand
       text: Cheatsheet
       link: https://www.pythoncheatsheet.org/
     - theme: alt
-      text: API Examples
+      text: 100天
       link: /api-examples
 
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 笔记拾遗
+    details: python学习中的笔记
+    link: ./python-note
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
