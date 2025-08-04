@@ -21,7 +21,8 @@ features:
   - title: Docker
     details: 容器化
     link: /docker
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 数学
+    details: 从1+1开始
+    link: /数学
 ---
 

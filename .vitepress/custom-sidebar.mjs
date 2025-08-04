@@ -31,7 +31,8 @@ function generateSidebar(basePath) {
 const SIDEBAR_PATHS = [
     '/python/python-note',
     '/docker',
-    '/java/spring'
+    '/java/spring',
+    '/数学/统计学'
 ]
 
 const sidebarConfig = {}
