@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress'
 import {sidebarConfig} from './custom-sidebar.mjs'
 import {VitePWA} from 'vite-plugin-pwa'
+import compression from 'vite-plugin-compression';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -110,7 +111,20 @@ export default defineConfig({
                 devOptions: {
                     enabled: false
                 },
-            })
+            }),
+            compression({
+                filter: /\.(png|jpe?g|gif|svg|webp|css|json|txt|html|xml)$/i,
+                verbose: true,
+                disable: false,
+                threshold: 102400,
+                algorithm: 'gzip',
+                deleteOriginFile: true,
+                ext: '.gz'
+            }),
         ]
+    },
+    build: {
+        // 确保所有需要压缩的文件都被纳入构建流程
+        assetsInclude: ['**/*.{png,jpg,jpeg,gif,svg,webp,json,txt}']
     }
 })
